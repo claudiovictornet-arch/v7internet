@@ -32,7 +32,7 @@ window.V7 = {
       telefone: '1146100707', telefoneTxt: '(11) 4610-0707',
       instagram: 'v7telecomgeral',
       facebook: 'https://facebook.com/v7telecom',
-      endereco: 'Rua Jean Gabriel Villin, 316 – São Paulo/SP'
+      endereco: ''
     }
   },
 
