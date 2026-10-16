@@ -85,7 +85,9 @@
       '\n• Endereço: ' + (v('end') || '-') + '\n• Bairro: ' + (v('bairro') || '-') +
       '\n• Plano: V7 ' + p.nome + ' (' + p.vel + ' ' + p.unid + ') – R$ ' + p.preco +
       '\n• Período para instalação: ' + (periodo || 'qualquer');
-    window.location.href = D.wa(u.whatsapp, msg);
+    var link = D.wa(u.whatsapp, msg);
+    var w = window.open(link, '_blank');
+    if (w) { w.opener = null; } else { window.location.href = link; }
   });
 })();
 </script>
