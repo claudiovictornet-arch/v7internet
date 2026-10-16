@@ -104,6 +104,13 @@
       $('#r-btn').href = wa(u.whatsapp, 'Olá, V7 ' + u.nome + '! Quero contratar o Plano V7 ' + p.nome + ' (' + p.vel + ' ' + p.unid + ').');
       r.hidden = false;
     } else { r.hidden = true; }
+    novaAba();
+  }
+  function novaAba() {
+    $$('a[href]').forEach(function (a) {
+      var h = a.getAttribute('href') || '';
+      if (/^https?:/i.test(h) && a.hostname !== location.hostname) { a.target = '_blank'; a.rel = 'noopener'; }
+    });
   }
   $('#cep').addEventListener('input', render);
   render();
