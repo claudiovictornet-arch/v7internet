@@ -59,7 +59,7 @@ window.V7 = {
   ],
 
   links: {
-    segundaVia: 'https://area.v7telecom.com.br/sac2/',
+    segundaVia: 'https://area.v7telecom.com.br/sac2/index.php?acao=cliente_boleto',
     areaCliente: 'https://area.v7telecom.com.br/sac2/',
     testeVelocidade: 'https://www.speedtest.net/pt',
     email: 'contato@v7telecom.com.br',
